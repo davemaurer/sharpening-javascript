@@ -1,6 +1,6 @@
 exports.fizzBuzzer = function(number) {
   if(number % 3 === 0 && number % 5 === 0) {
-    console.log('FizzBuzz Baby!');
+    return 'FizzBuzz Baby!';
   } else if(number % 3 === 0) {
     return 'Fizz...only.';
   } else if(number % 5 === 0) {

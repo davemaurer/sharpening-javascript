@@ -17,4 +17,9 @@ describe('fizzBuzz', function() {
     assert.equal(fb.fizzBuzzer(15), 'FizzBuzz Baby!');
     assert.equal(fb.fizzBuzzer(30), 'FizzBuzz Baby!');
   });
+
+  it('lets you down gently when the number is not divisible by 3 or 5', function() {
+    assert.equal(fb.fizzBuzzer(1), 'Not even a zzz. Sorry...');
+    assert.equal(fb.fizzBuzzer(2), 'Not even a zzz. Sorry...');
+  });
 });

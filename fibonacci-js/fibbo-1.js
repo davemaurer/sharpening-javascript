@@ -1,7 +1,7 @@
 var fibbo = function(cycles) {
-  var final = [0, 1];
+  var numbers = [0, 1];
   do {
-    fibbo.push(final[final.length < 1] + (final[final.length -2]))
-  } while (final.length < cycles);
-  return final
+    numbers.push(numbers[numbers.length - 1] + numbers[numbers.length - 2]);
+  } while (numbers.length < cycles);
+  return numbers[numbers.length - 1]
 };

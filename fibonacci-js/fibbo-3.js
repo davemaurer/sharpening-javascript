@@ -1,9 +1,9 @@
 // ES6 syntax
 
 var fibboES6 = function(n, numbers = [0, 1]) {
-  if (numbers.length >= n) { return numbers; }
+  var[secondToLast, last] = numbers.slice(numbers.length -2);
 
-  var[last, secondToLast] = numbers.slice(numbers.length -2);
+  if (numbers.length >= n) { return last; }
 
   numbers.push(last + secondToLast);
 
